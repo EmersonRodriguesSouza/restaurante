@@ -6,7 +6,21 @@
 </head>
 
 <body>
-	<div>
+	
+		<!--<nav class="navbar navbar-collapse">
+			<div class="container">
+				<div class=" navbar-header">
+					<a class="navbar-brand" href="clienteForm.php"</a>
+				</div>
+				
+			</div>
+		</nav>-->
+	
+	
+	
+	
+	
+	
 		<nav class="menu">
 			<ul>
 				<li><a href="" id="link1">Home</a>
@@ -26,4 +40,5 @@
 				</li>
 			</ul>
 		</nav>
-	</div>
+	</div>-->
+	
