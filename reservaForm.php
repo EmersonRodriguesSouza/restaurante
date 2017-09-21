@@ -29,111 +29,36 @@
 			
 			<tr>
 				<td>  Quantidade pessoas: </td>
-				<td><input type="text" name="numero_pessoas"></td>
+				<td><input type="text" name="numero_pessoas" class="form-control"></td>
 			</tr>
 	
 			  
 			<tr>
 				
 				<td>Numero da mesa:</td>
-				<td><input type="number" name="numero_mesa"></td>
+				<td><input type="number" name="numero_mesa" class="form-control"></td>
 			</tr>
 				 
 			
 			<tr>
 			    <td>Dia:</td>
-				<td><input type="date" name="data_reserva" required></td>
+				<td><input type="date" name="data_reserva" class="form-control" required></td>
 			</tr>
 				
 				
 				<tr>  <td>Hora entrada:</td>
 				
 				
-				<td><input type="time" name="hora_entrada" required> </td>
+				<td><input type="time" name="hora_entrada" class="form-control" required> </td>
 				</tr>
 				
 				<tr>
 					<td>Hora saída:</td>
-				<td><input type="time" name="hora_saida" required></td>
+				<td><input type="time" name="hora_saida" class="form-control" required></td>
 				</tr>
-				 
-				
-				
-				</table>
-				<!-------------botão---------------->
-				<button type="submit" class="btn btn-primary"> Fazer reserva </button>
-				
-
-		
-		
-			
-			
-			
-			
-			
-			
-			</tr>
-			
-			
-			
-			
-			
-				<tr>
-				<td>
-					<td>
-						
-					</td>
-				</td>
-			</tr>
-			
-			
-			
-				<tr>
-				<td>
-					<td>
-						
-					</td>
-				</td>
-			</tr>
-			
-			
-			
-			
-				<tr>
-				<td>
-					<td>
-						
-					</td>
-				</td>
-			</tr>
-			
-			
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-
+				</table>		
+		<button type="submit" class="btn btn-primary align-self-center"> Fazer reserva </button>
 		</form>	
+		
 		
 <?php include("rodape.php");?>

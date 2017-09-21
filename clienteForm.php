@@ -1,8 +1,8 @@
 <?php include("topo.php");?>
 <div class="principal">
-	<div class="container">
+	<div class="container" align="center">
 		<h1>Cliente</h1>
-		<form action="adiciona_cliente.php">
+		<form class="align-items-center" action="adiciona_cliente.php" >
 		<table class="table">
 		<tr>
 			<td>Nome:</td>
@@ -16,8 +16,8 @@
 			<td>CPF:</td>
 			<td> <input class="form-control type="number" name="cpf" required><br/></td>
 		</tr>
-		 </table>
-				<button type="submit" value="adicionar" class="btn-primary">Cadastrar</button>
+		</table>
+				<button type="submit" value="adicionar" class="btn btn-primary">Cadastrar</button>
 		</form>
 
 <?php include("rodape.php");?>
