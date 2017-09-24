@@ -1,19 +1,33 @@
 <head>
 	<meta charset="utf-8">
 	<title> Restaurante </title>
-	<link href="bootstrap-4.0.0-alpha.6-dist/css/bootstrap.css" rel="stylesheet">
+	<link href="bootstrap-3.0.1-dist/css/bootstrap.css"rel="stylesheet">
 	<link href="bootstrap-4.0.0-alpha.6-dist/css/restaurante.css" rel="stylesheet">
 </head>
 
 <body>
+<div class="navbar navbar-inverse navbar-fixed-top">
+	<div class="container">
+		<div class="navbar-header">
+		 <a class="navbar-brand" href="index.php">HOME</a>
+		</div>
+		<div>
+		 	<ul class="nav navbar-nav"> 
+		 	<li> <a href="clienteForm.php"> CLIENTE </a></li>
+		 	<li> <a href="reservaForm.php"> RESERVA </a></li>
+		 	<li> <a href="clienteForm.php"> QUANTIDADE </a></li>
+		 	</ul>
+
+		
+  
+		</div>
+	</div>
+</div>
+	
 
 
 
-
-
-
-
-<nav class="menu">
+<!--<nav class="menu">
 			<ul>
 				<li><a href="" id="link1">Home</a>
 				</li>
@@ -32,11 +46,11 @@
 				</li>
 			</ul>
 		</nav>
-	</div>
+	</div>-->
 	
 		
 	
-	
+	<!-- ------------------------------------------- -->
 	
 	
 	
