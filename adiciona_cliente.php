@@ -18,14 +18,21 @@ function inserirCliente($con, $nome, $telefone, $cpf){
 if(inserirCliente($con, $nome, $telefone, $cpf))
 {?>
 	<p class="text-success"> Cliente <?= $nome;?> <?= $telefone;?> <?= $cpf;?> adicionado </p>
-<?php } 
-else
-{ ?>
-	<p class="text-danger">Erro ao cadastrar cliente</p>	
+<?php } else { 
+$msg = mysqli_error($con);
+?>
+	<p class="text-danger">Erro ao cadastrar cliente <?= $msg?> <$></p>
+		
 <?php } 
 
 mysqli_close($con);
 
-?>   
+?>
+ 
+<?php
+	
+
+?>
    
+         
 <?php include("rodape.php");?>
