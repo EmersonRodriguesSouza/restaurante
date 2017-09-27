@@ -15,7 +15,7 @@
 		 	<ul class="nav navbar-nav"> 
 		 	<li> <a href="clienteForm.php"> CLIENTE </a></li>
 		 	<li> <a href="reservaForm.php"> RESERVA </a></li>
-		 	<li> <a href="listaReservas.php"> LISTA CLIENTE
+		 	<li> <a href="listaCliente.php"> LISTA CLIENTES
 		 	 </a></li>
 		 	</ul>
 

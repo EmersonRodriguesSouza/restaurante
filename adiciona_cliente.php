@@ -1,11 +1,8 @@
 <?php include("topo.php");?>
 <?php include("conecta.php");?>
-<?php
+<?php include("bancoCliente.php");?>
+<?php 
 
-function inserirCliente($con, $nome, $telefone, $cpf){
-	$query = "INSERT INTO cliente (nome, telefone, cpf) values('{$nome}', '{$telefone}', '{$cpf}')";
-	return(mysqli_query($con, $query));
-}
 
 	$nome = $_GET[ 'nome'];
 	$telefone = $_GET[ 'telefone'];
