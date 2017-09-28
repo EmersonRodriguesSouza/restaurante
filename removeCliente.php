@@ -6,6 +6,7 @@
 
 $id = $_GET['id'];
 removeClientes($con, $id);
-
+header ("Location: listaCliente.php?removido=true");
+die();	
+	
 ?>
-<p class="text-success"> cliente <?=$id?> Removido </p>

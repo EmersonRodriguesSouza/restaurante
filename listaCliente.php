@@ -3,6 +3,9 @@
 <?php include("bancoCliente.php");?>
 
 
+<div align="center">
+	<p class="alert-success"> Cliente Removido </p>
+</div>
 <div class="container">
 <div class="principal"> 
 
