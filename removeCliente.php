@@ -4,7 +4,7 @@
 
 <?php
 
-$id = $_GET['id'];
+$id = $_POST['id'];
 removeClientes($con, $id);
 header ("Location: listaCliente.php?removido=true");
 die();	

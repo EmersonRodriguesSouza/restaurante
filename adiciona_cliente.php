@@ -4,9 +4,9 @@
 <?php 
 
 
-	$nome = $_GET[ 'nome'];
-	$telefone = $_GET[ 'telefone'];
-	$cpf = $_GET['cpf'];
+	$nome = $_POST[ 'nome'];
+	$telefone = $_POST[ 'telefone'];
+	$cpf = $_POST['cpf'];
 
 ?>
 

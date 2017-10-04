@@ -2,10 +2,16 @@
 <?php include( "conecta.php" );?>
 <?php include("bancoCliente.php");?>
 
-
 <div align="center">
+	<?php
+	if ( array_key_exists("removido", $_GET) && $_GET[ "removido" ] == "true" ) {
+		?>
 	<p class="alert-success"> Cliente Removido </p>
+	<?php
+	}
+	?>	
 </div>
+		
 <div class="container">
 <div class="principal"> 
 
@@ -20,7 +26,10 @@ foreach($arrayCliente as $cliente):
 		<td><?= $cliente['nome']?> </td>
 		<td><?= $cliente['telefone']?> </td>
 		<td>
-			<a href ="removeCliente.php?id=<?=$cliente['id']?>" class="text-danger">  remover</a>
+		<form action="removeCliente.php" method="post">
+		<input type="hidden" name="id" value="<?=$cliente['id']?>">
+			<button class="btn btn-danger"> remover</button>
+			</form>
 		</td>
 	</tr>
  	

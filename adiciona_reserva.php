@@ -8,12 +8,12 @@ function cadastrarReserva($con, $cliente_id, $numero_pessoas, $numero_mesa, $dat
 	return(mysqli_query($con, $query));
 }
 			
-			$cliente_id = $_GET["cliente_id"];
-			$numero_pessoas = $_GET["numero_pessoas"];
-			$numero_mesa = $_GET["numero_mesa"];
-			$data_reserva = $_GET["data_reserva"];
-			$hora_entrada = $_GET["hora_entrada"];
-			$hora_saida = $_GET["hora_saida"];
+			$cliente_id = $_POST["cliente_id"];
+			$numero_pessoas = $_POST["numero_pessoas"];
+			$numero_mesa = $_POST["numero_mesa"];
+			$data_reserva = $_POST["data_reserva"];
+			$hora_entrada = $_POST["hora_entrada"];
+			$hora_saida = $_POST["hora_saida"];
 
 if(cadastrarReserva($con, $cliente_id, $numero_pessoas, $numero_mesa, $data_reserva, $hora_entrada, $hora_saida))
 { ?>

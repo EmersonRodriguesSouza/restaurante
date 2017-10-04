@@ -5,7 +5,7 @@
 	<div class="principal">
 
 		<h1>Reserva</h1>
-		<form action="adiciona_reserva.php">
+		<form action="adiciona_reserva.php" method="post">
 		
 	
 		<table class="table">
