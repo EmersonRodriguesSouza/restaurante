@@ -1,7 +1,7 @@
 <?php include("topo.php");?>
 <?php include("conecta.php");?>
 <?php include("bancoCliente.php");?>
-
+gggggggg
 <?php
 
 $id = $_POST['id'];
