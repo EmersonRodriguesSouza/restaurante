@@ -25,7 +25,10 @@ function removeClientes ($con, $id){
 	return mysqli_query($con, $query);
 	
 }
-
+function removeReserva($con,$id){
+	$query = "DELETE FROM reserva where id = {$id}";
+	
+}
 
 
 
