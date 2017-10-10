@@ -23,16 +23,14 @@ function removeReservas ($con, $id){
 }
 
 function buscaReserva($con, $id){
-	$query = "SELECT * FROM cliente where id ={$id}";
-	$resultado_busca = mysqli_query($con, $query);
-	return mysqli_fetch_assoc($resultado_busca);
-	
+$resultado = mysqli_query($con, "SELECT cliente.nome, reserva.cliente_id, reserva.id, reserva.numero_mesa, reserva.data_reserva, reserva.numero_pessoas, reserva.hora_entrada, reserva.hora_saida FROM reserva INNER JOIN cliente ON reserva.cliente_id = cliente.id where reserva.id= {$id}");
+return mysqli_fetch_assoc($resultado);
 	
 }
 
 
-function alteraReserva ($con, $id, $nome,$telefone, $cpf){
-	$query = "UPDATE cliente SET nome ='{$nome}', telefone ='{$telefone}', cpf ='{$cpf}' where id ='{$id}';";
+function alteraReserva ($con, $id, $numero_pessoas, $numero_mesa, $data_reserva, $hora_entrada, $hora_saida){
+	$query = "UPDATE reserva SET numero_pessoas ='{$numero_pessoas}', numero_mesa ='{$numero_mesa}', data_reserva ='{$data_reserva}', hora_entrada='{$hora_entrada}', hora_saida='{$hora_saida}' where id ='{$id}';";
 	return mysqli_query($con, $query);
 }
 

@@ -39,7 +39,7 @@
 			<td><?= $reserva['numero_pessoas']?></td>
 			<td><?= $reserva['hora_entrada'] ?></td>
             <td><?= $reserva['hora_saida'] ?></td>
-            <td><a  class="btn btn-primary" href="alteraFormReserva.php"serva.php?id=<?=$reserva['id']?>"> alterar </a></td>
+            <td><a  class="btn btn-primary" href="alteraFormReserva.php?id=<?=$reserva['id']?>"> alterar </a></td>
 			<td>
 			
 			

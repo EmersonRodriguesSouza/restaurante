@@ -1,22 +1,23 @@
 <?php include("topo.php");?>
 <?php include("conecta.php");?>
-<?php include("bancoCliente.php");?>
+<?php include("bancoReserva.php");?>
 
 
 <?php 
-	
-	$id = $_POST['id'];
-	$nome = $_POST[ 'nome'];
-	$telefone = $_POST[ 'telefone'];
-	$cpf = $_POST['cpf'];
+			$id = $_POST['id'];
+			$numero_pessoas = $_POST['numero_pessoas'];
+			$numero_mesa = $_POST['numero_mesa'];
+			$data_reserva = $_POST['data_reserva'];
+			$hora_entrada = $_POST['hora_entrada'];
+			$hora_saida = $_POST['hora_saida'];
 
 ?>
 
 <?php
 
-if(alteraCliente($con, $id, $nome, $telefone, $cpf))
+if(alteraReserva($con, $id, $numero_pessoas, $numero_mesa, $data_reserva, $hora_entrada, $hora_saida))
 {?>
-	<p class="text-success"> Cliente <?= $nome;?> <?= $telefone;?> <?= $cpf;?> alterado </p>
+	<p class="text-success"> Sucesso </p>
 <?php } else { 
 $msg = mysqli_error($con);
 ?>
