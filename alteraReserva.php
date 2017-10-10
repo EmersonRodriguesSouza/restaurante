@@ -13,6 +13,7 @@
 
 ?>
 
+<div class="principal">
 <?php
 
 if(alteraReserva($con, $id, $numero_pessoas, $numero_mesa, $data_reserva, $hora_entrada, $hora_saida))
@@ -28,3 +29,4 @@ $msg = mysqli_error($con);
 mysqli_close($con);
 
 ?>
+</div>

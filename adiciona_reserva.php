@@ -4,7 +4,7 @@
 
 
 
-
+<div class="principal">
 <?php
 			$cliente_id = $_POST["cliente_id"];
 			$numero_pessoas = $_POST["numero_pessoas"];
@@ -24,5 +24,6 @@ else
 mysqli_close($con);
 
 ?>
+</div>
 			
 <?php include("rodape.php");?>

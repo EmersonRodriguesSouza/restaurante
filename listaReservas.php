@@ -7,7 +7,7 @@
 	<?php
 	if ( array_key_exists("removido", $_GET) && $_GET[ "removido" ] == "true" ) {
 		?>
-	<p class="alert-success"> CReservaRemovido </p>
+	<p class="alert-success"> Reserva Removida </p>
 	<?php
 	}
 	?>	

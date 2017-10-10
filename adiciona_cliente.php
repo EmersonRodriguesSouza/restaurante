@@ -11,11 +11,12 @@
 
 ?>
 
+<div class="principal">
 <?php
 
 if(inserirCliente($con, $nome, $telefone, $cpf))
 {?>
-	<p class="text-success"> Cliente <?= $nome;?> <?= $telefone;?> <?= $cpf;?> adicionado </p>
+	<p class="text-success"> Cliente adicionado </p>
 <?php } else { 
 $msg = mysqli_error($con);
 ?>
@@ -27,7 +28,7 @@ mysqli_close($con);
 
 ?>
  
-
+</div>
    
          
 <?php include("rodape.php");?>
