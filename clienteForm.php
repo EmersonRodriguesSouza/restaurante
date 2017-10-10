@@ -5,8 +5,8 @@
 		<form class="align-items-center" action="adiciona_cliente.php" method="post" action="<?= $_SERVER['PHP_SELF']?>">
 		<table class="table">
 		<tr>
-			<td>Nome:</td>
-			<td> <input class= "form-control"type="text" name="nome" required><br/></td> 
+			<td>Nome_Completo:</td>
+			<td> <input class= "form-control"type="text" name="nome" maxlength="60" required><br/></td> 
 		</tr>
 		<tr>
 		    <td>Telefone:</td>

@@ -25,10 +25,20 @@ function removeClientes ($con, $id){
 	return mysqli_query($con, $query);
 	
 }
-function removeReserva($con,$id){
-	$query = "DELETE FROM reserva where id = {$id}";
+
+function buscaCliente($con, $id){
+	$query = "SELECT * FROM cliente where id ={$id}";
+	$resultado_busca = mysqli_query($con, $query);
+	return mysqli_fetch_assoc($resultado_busca);
+	
 	
 }
+function alteraCliente ($con, $id, $nome,$telefone, $cpf){
+	$query = "UPDATE cliente SET nome ='{$nome}', telefone ='{$telefone}', cpf ='{$cpf}' where id ='{$id}';";
+	return mysqli_query($con, $query);
+}
+	
+
 
 
 

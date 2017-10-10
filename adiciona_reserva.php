@@ -1,13 +1,11 @@
 <?php include("conecta.php");?>
 <?php include("topo.php");?>
+<?php include("bancoReserva.php");?>
+
+
+
 
 <?php
-
-function cadastrarReserva($con, $cliente_id, $numero_pessoas, $numero_mesa, $data_reserva, $hora_entrada, $hora_saida){
-	$query = "INSERT INTO reserva (cliente_id, numero_pessoas, numero_mesa, data_reserva, hora_entrada, hora_saida) values('{$cliente_id}', '{$numero_pessoas}', '{$numero_mesa}','{$data_reserva}', '{$hora_entrada}', '{$hora_saida}')";
-	return(mysqli_query($con, $query));
-}
-			
 			$cliente_id = $_POST["cliente_id"];
 			$numero_pessoas = $_POST["numero_pessoas"];
 			$numero_mesa = $_POST["numero_mesa"];
