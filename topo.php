@@ -3,6 +3,7 @@
 	<title> Restaurante </title>
 	<link href="bootstrap-3.0.1-dist/css/bootstrap.css"rel="stylesheet">
 	<link href="bootstrap-4.0.0-alpha.6-dist/css/restaurante.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="estilo.css">
 </head>
 
 <body>
@@ -25,6 +26,7 @@
 		</div>
 	</div>
 </div>
+<div class="escorpo">
 	
 
 

@@ -1,5 +1,6 @@
 <?php include("topo.php");?>
 			
-			<div align="center"> <h1>RESTAURANTE DO GABIRU </h1> </div><h1> 
+			
+			<img src="Imagens/capa2.jpg" width="100%">
 			
 <?php include("rodape.php");?>
