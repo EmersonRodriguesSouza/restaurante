@@ -2,12 +2,12 @@
  include( "conecta.php" );
  include("bancoReserva.php");?>
  
- 
+ <div class="gato">
  <div align="center">
 	<?php
 	if ( array_key_exists("removido", $_GET) && $_GET[ "removido" ] == "true" ) {
 		?>
-	<p class="alert-success"> Reserva Removida </p>
+	<p class="negativo"> Reserva Removida </p>
 	<?php
 	}
 	?>	
@@ -55,9 +55,4 @@
 			endforeach
 		?>
 </table>
-
-
-<?php include("rodape.php");?>
-
-
-
+</div>

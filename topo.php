@@ -14,8 +14,8 @@
 		</div>
 		<div>
 		 	<ul class="nav navbar-nav"> 
-		 	<li> <a href="clienteForm.php"> CLIENTE </a></li>
-		 	<li> <a href="reservaForm.php"> RESERVA </a></li>
+		 	<li> <a href="clienteForm.php"> CADASTRAR CLIENTE </a></li>
+		 	<li> <a href="reservaForm.php"> CADASTRAR RESERVA </a></li>
 				<li> <a href="listaCliente.php"> LISTA CLIENTES</a> </li>
 		 	<li> <a href="listaReservas.php"> LISTA RESERVAS  </a></li>
 		 	 </a></li>
@@ -26,45 +26,4 @@
 		</div>
 	</div>
 </div>
-<div class="escorpo">
-	
-
-
-
-<!--<nav class="menu">
-			<ul>
-				<li><a href="" id="link1">Home</a>
-				</li>
-				<li><a href="" id="link1">Reservas</a>
-					<ul>
-						<li><a href="" id="link1">Fazer reserva</a>
-						</li>
-						<li><a href="" id="link1">Consultar</a>
-						</li>
-						<li><a href="" id="link1">Quantidades de vagas</a>
-						</li>
-					</ul>
-				</li>
-
-				<li><a href="" id="link1">Cliente</a>
-				</li>
-			</ul>
-		</nav>
-	</div>-->
-	
-		
-	
-	<!-- ------------------------------------------- -->
-	
-	
-	
-	
-		<!--<nav class="navbar navbar-collapse">
-			<div class="container">
-				<div class=" navbar-header">
-					<a class="navbar-brand" href="clienteForm.php"</a>
-				</div>
-				
-			</div>
-		</nav>-->
-	
+<div class="escorpo">	

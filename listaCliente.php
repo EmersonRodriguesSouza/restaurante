@@ -6,7 +6,7 @@
 	<?php
 	if ( array_key_exists( "removido", $_GET ) && $_GET[ "removido" ] == "true" ) {
 		?>
-	<p class="alert-success"> Cliente Removido </p>
+	<p class="negativo"> Cliente Removido </p>
 	<?php
 	}
 	?>
@@ -55,4 +55,4 @@ foreach($arrayCliente as $cliente):
 		</table>
 	</div>
 </div>
-<?php include("rodape.php"); ?>
+</div>

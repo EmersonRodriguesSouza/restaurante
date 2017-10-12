@@ -5,6 +5,7 @@
 
 <?php 
 			$id = $_POST['id'];
+			$cliente_id = null;
 			$numero_pessoas = $_POST['numero_pessoas'];
 			$numero_mesa = $_POST['numero_mesa'];
 			$data_reserva = $_POST['data_reserva'];
@@ -16,13 +17,16 @@
 <div class="principal">
 <?php
 
+checarMaximoReservasClienteDia($con, $cliente_id, $data_reserva);
+//checarMaximoReservasDia($con, $data_reserva);
 if(alteraReserva($con, $id, $numero_pessoas, $numero_mesa, $data_reserva, $hora_entrada, $hora_saida))
 {?>
-	<p class="text-success"> Sucesso </p>
+	<p class="positivo"> Reserva alterada com sucesso. </p>
 <?php } else { 
 $msg = mysqli_error($con);
+    die();
 ?>
-	<p class="text-danger">Erro ao alterar cliente <?= $msg?> <$></p>
+	<p class="negativo">Erro ao alterar cliente <?= $msg?> <$></p>
 		
 <?php } 
 

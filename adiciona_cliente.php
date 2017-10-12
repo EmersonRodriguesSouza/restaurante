@@ -16,11 +16,11 @@
 
 if(inserirCliente($con, $nome, $telefone, $cpf))
 {?>
-	<p class="text-success"> Cliente adicionado </p>
+	<p class="positivo"> Cliente <?= $nome?> cadastrado com sucesso </p>
 <?php } else { 
 $msg = mysqli_error($con);
 ?>
-	<p class="text-danger">Erro ao cadastrar cliente <?= $msg?> <$></p>
+	<p class="negativo">Erro ao cadastrar cliente <?= $msg?> <$></p>
 		
 <?php } 
 

@@ -13,14 +13,16 @@
 			$hora_entrada = $_POST["hora_entrada"];
 			$hora_saida = $_POST["hora_saida"];
 
-if(cadastrarReserva($con, $cliente_id, $numero_pessoas, $numero_mesa, $data_reserva, $hora_entrada, $hora_saida))
-{ ?>
-	<p class="alert-success">Reserva realizada com sucesso.</p>
+checarMaximoReservasClienteDia($con, $cliente_id, $data_reserva);
+//checarMaximoReservasDia($con, $data_reserva);
+	if(cadastrarReserva($con, $cliente_id, $numero_pessoas, $numero_mesa, $data_reserva, $hora_entrada, $hora_saida)){?>
+	<p class="positivo">Reserva realizada com sucesso.</p>
 <?php }
 else
-{  ?>
-	<p class="alert-danger">Erro ao realizar reserva.</p>
-<?php }
+{ die(); ?>
+	<p class="negativo">Erro ao realizar reserva.</p>
+<?php } 
+
 mysqli_close($con);
 
 ?>
