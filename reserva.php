@@ -13,9 +13,6 @@
 
 
 
-
-
-
 <?php
 require_once('conecta.php');
 $slq = "SELECT * FROM cliente";
@@ -80,7 +77,7 @@ if(isset($_GET['export']) && $_GET['export'] == 'xml'){
 		 	<li> <a href="listaReservas.php"> LISTA RESERVAS  </a></li>
 		 	<!--<li> <a href="?export=excel&&fileName=clientes"> EXCEL. CLIENTES</a></li>-->
 		 	<li> <a href="?export=xml&&fileName=clientes"> XML. CLIENTES</a></li>
-		 	<li> <a href="import_xml.php"> Import_xml</a></li>
+		 	
 		 	 </a></li>
 		 	</ul>
 
@@ -89,4 +86,4 @@ if(isset($_GET['export']) && $_GET['export'] == 'xml'){
 		</div>
 	</div>
 </div>
-<div class="escorpo">	
+<div class="escorpo">
