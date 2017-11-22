@@ -74,7 +74,7 @@ if(isset($_GET['export']) && $_GET['export'] == 'xml'){
 		</div>
 		<div>
 		 	<ul class="nav navbar-nav"> 
-		 	<li> <a href="clienteForm.php"> <font size="0.1" CADASTRAR CLIENTE> </font> </a></li>
+		 	<li> <a href="clienteForm.php">  CADASTRAR CLIENTE  </a></li>
 		 	<li> <a href="reservaForm.php"> CADASTRAR RESERVA </a></li>
 				<li> <a href="listaCliente.php">LISTA CLIENTES</a> </li>
 		 	<li> <a href="listaReservas.php"> LISTA RESERVAS  </a></li>
