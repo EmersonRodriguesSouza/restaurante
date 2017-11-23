@@ -32,9 +32,9 @@ while($row = mysqli_fetch_assoc($stmt)){
 require_once('Export.php');
 $export = new Export();
 
-if(isset($_GET['export']) && $_GET['export'] == 'excel'){
-    $export->excel('Lista de Clientes', $_GET['fileName'], $data);
-}
+//if(isset($_GET['export']) && $_GET['export'] == 'excel'){
+   // $export->excel('Lista de Clientes', $_GET['fileName'], $data);
+//}
 	
 	
 if(isset($_GET['export']) && $_GET['export'] == 'xml'){
